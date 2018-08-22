@@ -88,11 +88,43 @@
                 <CheckBox Content="Saw"></CheckBox>
             </StackPanel>
         </Grid>
-            <!--Length-->
-            <TextBlock Text="Length" Margin="0 5 0 0" />
-            <TextBox Padding="2" />
-            <TextBlock Text="Mass" Margin="0 5 0 0" />
-            <ComboBox Padding="2" IsReadOnly="True" Background="#eee"/>
-         </StackPanel>
+            <!--Length, Mass-->
+            <Grid>
+                <StackPanel>
+
+                    <TextBlock Text="Length" Margin="0 5 0 0" />
+                    <TextBox Padding="2" />
+                    <TextBlock Text="Mass" Margin="0 5 0 0" />
+                    <ComboBox Padding="2" IsReadOnly="True" Background="#eee" />
+                </StackPanel>
+            </Grid>
+            <!--Raw Material-->
+            <Grid>
+                <StackPanel>
+                    <TextBlock Text="Finish" Margin="0 5 0 0"/>
+                    <ComboBox SelectedIndex="0" Padding="2" IsReadOnly="True" Background="#eee">
+                        <ComboBoxItem>Painted</ComboBoxItem>
+                        <ComboBoxItem>Not Painted</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock Text="Purchase Information" Margin="0 5 0 0"/>
+                    <ComboBox SelectedIndex="0" Padding="2" IsReadOnly="True" Background="#eee">
+                        <ComboBoxItem>Purchased</ComboBoxItem>
+                        <ComboBoxItem>Manufactured</ComboBoxItem>  
+                    </ComboBox>
+                        </StackPanel>
+            </Grid>
+            <!--additional information-->
+            <Grid>
+                <StackPanel>
+
+                    <TextBlock Text="Supplier Name" Margin="0 5 0 0" />
+                    <TextBox Padding="2" />
+                    <TextBlock Text="Supplier Code" Margin="0 5 0 0" />
+                    <TextBox Padding="2" />
+                    <TextBlock Text="Additional Information" Margin="0 5 0 0" />
+                    <TextBox Padding="2" />
+                </StackPanel>
+            </Grid>
+            </StackPanel>
     </Border>
 </Window>
